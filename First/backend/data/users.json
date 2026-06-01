@@ -1,0 +1,26 @@
+[
+  {
+    "username": "customer1",
+    "password": "cust123",
+    "role": "Customer",
+    "name": "Greeny Guest"
+  },
+  {
+    "username": "staff1",
+    "password": "staff123",
+    "role": "Staff",
+    "name": "Barista Team"
+  },
+  {
+    "username": "admin1",
+    "password": "admin123",
+    "role": "Admin",
+    "name": "Cafe Manager"
+  },
+  {
+    "username": "super1",
+    "password": "super123",
+    "role": "SuperAdmin",
+    "name": "Owner"
+  }
+]
