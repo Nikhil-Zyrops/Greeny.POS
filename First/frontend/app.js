@@ -1,3 +1,6 @@
+// API Configuration
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:3000';
+
 const state = {
   user: null,
   token: null,
@@ -80,7 +83,8 @@ async function apiFetch(path, options = {}) {
   if (state.token) {
     headers['x-auth-token'] = state.token;
   }
-  const response = await fetch(path, {
+  const url = path.startsWith('http') ? path : `${API_BASE_URL}${path}`;
+  const response = await fetch(url, {
     ...options,
     headers: {
       'Content-Type': 'application/json',
