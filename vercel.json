@@ -1,0 +1,4 @@
+{
+  "buildCommand": "cd First/frontend && echo \"window.API_BASE_URL = '$API_BASE_URL' || 'http://localhost:3000';\" > config-env.js",
+  "outputDirectory": "First/frontend"
+}

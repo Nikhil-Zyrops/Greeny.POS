@@ -197,8 +197,9 @@
   </div>
 
   <script>
-    // Set API base URL from window or fallback to localhost
-    window.API_BASE_URL = window.API_BASE_URL || 'http://localhost:3000';
+    // API Configuration - Set your backend URL here
+    // For Vercel: Update the API_BASE_URL in the window object
+    window.API_BASE_URL = localStorage.getItem('API_BASE_URL') || 'http://localhost:3000';
   </script>
   <script src="app.js"></script>
 </body>
